@@ -2,13 +2,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.hackerspace</groupId>
-    <artifactId>jgravatar-maven</artifactId>
-    <version>1.0</version>
+    <groupId>com.github.anirudhvarma12</groupId>
+    <artifactId>jgravatar</artifactId>
+    <version>2.0</version>
     <packaging>jar</packaging>
 
     <name>jgravatar-maven</name>
-    <url>http://maven.apache.org</url>
+    <url>https://github.com/anirudhvarma12/jgravatar</url>
+  
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -38,4 +39,27 @@
             <type>jar</type>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <!--          <outputDirectory>C:\Users\Anirudh Varma\.m2\repository\com\github\anirudhvarma12\jgravatar\2.0</outputDirectory>-->
+                    <finalName>jgravatar-2.0</finalName>
+                    <attach>true</attach>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.1</version>       
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
