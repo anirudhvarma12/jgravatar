@@ -2,6 +2,9 @@
 
 jgravatar is a tiny Java library for accessing avatar images from gravatar.com
 
+This fork of jGravatar also supports
+* Images upto 2048px.
+* Mystery man as default image.
 ## Usage example
 
 	Gravatar gravatar = new Gravatar();
